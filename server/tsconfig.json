@@ -1,0 +1,124 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolvePackageJsonExports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "types": [
+      "vitest/globals",
+      "node"
+    ],
+    "paths": {
+      "@app/common": [
+        "./libs/common/src/index.ts"
+      ],
+      "@app/common/*": [
+        "./libs/common/src/*"
+      ],
+      "@app/contracts": [
+        "./libs/contracts/src/index.ts"
+      ],
+      "@app/contracts/*": [
+        "./libs/contracts/src/*"
+      ],
+      "@app/error": [
+        "./libs/error/src/index.ts"
+      ],
+      "@app/error/*": [
+        "./libs/error/src/*"
+      ],
+      "@app/message-broker": [
+        "./libs/message-broker/src/index.ts"
+      ],
+      "@app/message-broker/*": [
+        "./libs/message-broker/src/*"
+      ],
+      "@lib/cache": [
+        "./libs/cache/src/index.ts"
+      ],
+      "@lib/cache/*": [
+        "./libs/cache/src/*"
+      ],
+      "@lib/common": [
+        "./libs/common/src/index.ts"
+      ],
+      "@lib/common/*": [
+        "./libs/common/src/*"
+      ],
+      "@lib/configuration": [
+        "./libs/configuration/src/index.ts"
+      ],
+      "@lib/configuration/*": [
+        "./libs/configuration/src/*"
+      ],
+      "@lib/database": [
+        "./libs/database/src/index.ts"
+      ],
+      "@lib/database/*": [
+        "./libs/database/src/*"
+      ],
+      "@lib/grpc": [
+        "./libs/grpc/src/index.ts"
+      ],
+      "@lib/grpc/*": [
+        "./libs/grpc/src/*"
+      ]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/api-gatway/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/identity-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/work-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/engineering-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/platform-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/intelligence-service/tsconfig.app.json"
+    },
+    {
+      "path": "./libs/cache/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/common/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/configuration/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/contracts/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/database/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/error/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/grpc/tsconfig.lib.json"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+/// <reference types="nativewind/types" />
+
+import 'react-native';
+
+declare module 'react-native' {
+  interface ViewProps {
+    className?: string;
+  }
+  interface TextProps {
+    className?: string;
+  }
+  interface TextInputProps {
+    className?: string;
+    placeholderClassName?: string;
+  }
+  interface PressableProps {
+    className?: string;
+  }
+  interface ScrollViewProps {
+    className?: string;
+    contentContainerClassName?: string;
+  }
+  interface ImageProps {
+    className?: string;
+  }
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicAttributes {
+      className?: string;
+    }
+  }
+}

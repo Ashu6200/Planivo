@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Planivo",
+    "slug": "planivo-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "planivo",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.planivo.mobile"
+    },
+    "android": {
+      "package": "com.planivo.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#208AEF"
+      }
+    },
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

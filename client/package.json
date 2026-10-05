@@ -1,0 +1,32 @@
+{
+  "name": "@project/root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=@project/web",
+    "dev:mobile": "turbo run dev --filter=@project/mobile",
+    "dev:desktop": "turbo run dev --filter=@project/desktop",
+    "build": "turbo run build",
+    "build:web": "turbo run build --filter=@project/web",
+    "build:desktop": "turbo run build --filter=@project/desktop",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "turbo run format",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "clean:all": "pnpm -r exec -- rm -rf node_modules dist .turbo"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "turbo": "^2.4.4",
+    "typescript": "~5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@12.9.0"
+}
