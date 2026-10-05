@@ -12,7 +12,7 @@ client/
 │   └── desktop/    — Electron + React + Vite desktop app
 │
 ├── packages/
-│   ├── ui/         — Tamagui shared UI components
+│   ├── ui/         — Cross-platform design system (Tailwind CSS, NativeWind, Radix & RN Primitives)
 │   ├── store/      — Redux Toolkit + Redux Persist
 │   ├── api/        — RTK Query API layer
 │   ├── types/      — Shared TypeScript types
@@ -61,7 +61,7 @@ pnpm dev:desktop   # Electron app
 - **Web**: React 19 + Vite 6
 - **Mobile**: React Native + Expo SDK 52
 - **Desktop**: Electron 33 + Vite 6
-- **UI**: Tamagui (cross-platform)
+- **UI**: Tailwind CSS v3 (Web/Desktop) + NativeWind v4 (Mobile) with Radix & RN Primitives
 - **State**: Redux Toolkit + Redux Persist
 - **API**: RTK Query
 - **Linting**: Biome
